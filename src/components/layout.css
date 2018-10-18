@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+.timer {
+  margin: 15px 0;
+}
+
+.end {
+  padding: 30px;
+}

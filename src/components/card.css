@@ -1,0 +1,14 @@
+.card {
+  display: grid;
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.revealed {
+  border-color: #7EB1F4;
+}
