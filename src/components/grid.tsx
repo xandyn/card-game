@@ -10,7 +10,7 @@ import './grid.css';
 @observer
 export class Grid extends React.Component {
   render() {
-    const { grid, gridDisabled, size } = appStore.gridStore;
+    const { gridStore: { grid, gridDisabled, size } } = appStore;
     const gridStyles = {
       gridTemplateColumns: `repeat(${size}, 50px)`,
       gridTemplateRows: `repeat(${size}, 50px)`

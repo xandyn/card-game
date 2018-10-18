@@ -47,12 +47,11 @@ export class AppStore {
   @action
   public setGameState(state: GameState): void {
     this.gameState = state;
+    this.gridStore.generateGrid();
     if (state === GameState.Started) {
-      this.gridStore.generateGrid();
       this.gridStore.enableGrid();
       this.startTimer();
     } else {
-      this.gridStore.generateGrid();
       this.gridStore.disableGrid();
       this.resetTimer();
     }
