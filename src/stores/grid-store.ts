@@ -110,13 +110,13 @@ export class GridStore {
   @action
   private hideCards(): void {
     // make delay and disable grid, so user can memoize cards
-    this.gridDisabled = true;
+    this.disableGrid();
     delay(() => {
       for (const i of this.flippedCards) {
         this.grid[i].flipped = false;
       }
       this.flippedCards = [];
-      this.gridDisabled = false;
+      this.enableGrid();
     }, 1000);
   }
 }
